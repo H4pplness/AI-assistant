@@ -1,5 +1,6 @@
 package dongpb.learningeverything.chatassistantservice.domain.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public class AIRequest {
     private Map<String, Object> metadata;
 
     @Data
+    @Builder
     public static class Message{
         private String role;
         private String content;

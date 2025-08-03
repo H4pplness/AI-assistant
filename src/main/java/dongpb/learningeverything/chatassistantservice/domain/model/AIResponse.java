@@ -12,6 +12,6 @@ import java.util.Map;
 @NoArgsConstructor
 @Builder
 public class AIResponse {
-    private String content;
+    private Object content;
     private Map<String, Object> metadata;
 }

@@ -70,7 +70,6 @@ public class GroqModel implements AIModel {
         Map<String,Object> metadata = new HashMap<>();
         metadata.put("model", "groq");
         metadata.put("created",groqResponse.getCreated());
-
         return AIResponse.builder()
                 .content(groqResponse.getChoices().get(0).getMessage().getContent())
                 .metadata(metadata)
