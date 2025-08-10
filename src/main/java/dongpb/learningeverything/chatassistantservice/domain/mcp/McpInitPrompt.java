@@ -33,7 +33,7 @@ public class McpInitPrompt {
                 .content(contextContent).build();
         AIRequest.Message assistantResponse = AIRequest.Message.builder()
                 .role("assistant")
-                .content("{ \"model\": \"groq\", \"messages\": [ { \"role\": \"assistant\", \"content\": \"Xin chào, tôi có thể giúp gì cho bạn ?\" } ] }").build();
+                .content("{\"role\":\"assistant\",\"method\":\"response\",\"content\":\"Xin chào, tôi có thể giúp gì cho bạn ?\"}").build();
 
         initMessagePrompt.add(context);
         initMessagePrompt.add(assistantResponse);
