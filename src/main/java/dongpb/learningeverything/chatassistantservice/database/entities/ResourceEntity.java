@@ -12,11 +12,9 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 public class ResourceEntity extends BaseEntity{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "resource_id")
-    Integer resourceId;
-    String resourceName;
     @Column(unique = true)
     String resourceCode;
+
+    String resourceName;
     String description;
 }

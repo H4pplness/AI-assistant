@@ -3,8 +3,8 @@ package dongpb.learningeverything.chatassistantservice.application.controllers;
 
 import dongpb.learningeverything.chatassistantservice.domain.model.AIRequest;
 import dongpb.learningeverything.chatassistantservice.domain.model.AIResponse;
-import dongpb.learningeverything.chatassistantservice.domain.service.AIService;
-import dongpb.learningeverything.chatassistantservice.domain.service.McpService;
+import dongpb.learningeverything.chatassistantservice.domain.model.AIService;
+import dongpb.learningeverything.chatassistantservice.domain.mcp.McpService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

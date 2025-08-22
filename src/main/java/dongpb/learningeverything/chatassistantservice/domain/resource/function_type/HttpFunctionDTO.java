@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.Map;
-import java.util.Objects;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -14,7 +13,7 @@ public class HttpFunctionDTO extends FunctionDTO{
     String method;
     Map<String, Object> requestBody;
     Map<String, String> headers;
-    Map<String, String> queryParams;
+    Map<String, String> queryParams; // key : param , value : data type
 
     @Override
     public String getFunctionType() {
@@ -25,4 +24,7 @@ public class HttpFunctionDTO extends FunctionDTO{
     public Object sendRequest() {
         return null;
     }
+
+
+
 }

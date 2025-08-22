@@ -1,10 +1,9 @@
-package dongpb.learningeverything.chatassistantservice.domain.service;
+package dongpb.learningeverything.chatassistantservice.domain.mcp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dongpb.learningeverything.chatassistantservice.domain.mcp.McpInitPrompt;
 import dongpb.learningeverything.chatassistantservice.domain.model.AIRequest;
 import dongpb.learningeverything.chatassistantservice.domain.model.AIResponse;
-import lombok.Data;
+import dongpb.learningeverything.chatassistantservice.domain.model.AIService;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.stereotype.Service;

@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface FunctionRepository extends JpaRepository<FunctionEntity,Integer> {
-    List<FunctionEntity> findByResourceId(Integer resourceId);
+    List<FunctionEntity> findByResourceCode(String resourceCode);
 }

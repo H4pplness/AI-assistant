@@ -1,10 +1,7 @@
-package dongpb.learningeverything.chatassistantservice.domain.service;
+package dongpb.learningeverything.chatassistantservice.domain.model;
 
 import dongpb.learningeverything.chatassistantservice.application.exception.BaseException;
 import dongpb.learningeverything.chatassistantservice.application.exception.Errors;
-import dongpb.learningeverything.chatassistantservice.domain.model.AIModel;
-import dongpb.learningeverything.chatassistantservice.domain.model.AIRequest;
-import dongpb.learningeverything.chatassistantservice.domain.model.AIResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

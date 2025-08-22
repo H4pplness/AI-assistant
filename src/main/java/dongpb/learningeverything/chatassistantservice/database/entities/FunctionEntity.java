@@ -17,14 +17,16 @@ import java.util.Map;
 public class FunctionEntity extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "function_id")
     Integer functionId;
 
     String functionName;
 
+    String functionCode;
+
     String description;
 
-    Integer resourceId;
+    @Column(nullable = false)
+    String resourceCode;
 
     String functionType;
 
