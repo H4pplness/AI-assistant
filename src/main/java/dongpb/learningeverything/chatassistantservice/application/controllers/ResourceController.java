@@ -1,6 +1,6 @@
 package dongpb.learningeverything.chatassistantservice.application.controllers;
 
-import dongpb.learningeverything.chatassistantservice.domain.resource.IResourceService;
+import dongpb.learningeverything.chatassistantservice.domain.resource.ResourceService;
 import dongpb.learningeverything.chatassistantservice.domain.resource.ResourceDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("v1/resource")
 @RequiredArgsConstructor
 public class ResourceController {
-    private final IResourceService resourceService;
+    private final ResourceService resourceService;
 
     @PostMapping()
     public ResponseEntity<Object> createResource(@RequestBody ResourceDTO request){

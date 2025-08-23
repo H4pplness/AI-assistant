@@ -1,7 +1,5 @@
 package dongpb.learningeverything.chatassistantservice.domain.resource;
 
-import dongpb.learningeverything.chatassistantservice.domain.resource.function_type.FunctionDTO;
-import dongpb.learningeverything.chatassistantservice.domain.resource.function_type.HttpFunctionDTO;
 import lombok.Builder;
 import lombok.Data;
 
