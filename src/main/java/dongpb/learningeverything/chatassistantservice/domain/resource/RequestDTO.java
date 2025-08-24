@@ -1,3 +1,7 @@
 package dongpb.learningeverything.chatassistantservice.domain.resource;
 
-public abstract class RequestDTO {}
+import java.util.Map;
+
+public abstract class RequestDTO {
+    public abstract String getType();
+}

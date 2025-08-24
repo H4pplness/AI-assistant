@@ -2,6 +2,7 @@ package dongpb.learningeverything.chatassistantservice.domain.resource.http;
 
 import dongpb.learningeverything.chatassistantservice.database.entities.FunctionEntity;
 import dongpb.learningeverything.chatassistantservice.domain.resource.FunctionMapper;
+import dongpb.learningeverything.chatassistantservice.domain.resource.FunctionType;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -65,13 +66,9 @@ public class HttpFunctionMapper implements FunctionMapper<HttpFunctionDTO> {
         return functionEntity;
     }
 
-    /**
-     * same as HttpFunctionDTO.getFunctionType
-     * @return
-     */
     @Override
     public String getFunctionType() {
-        return "http";
+        return FunctionType.HTTP.getName();
     }
 
     @Override

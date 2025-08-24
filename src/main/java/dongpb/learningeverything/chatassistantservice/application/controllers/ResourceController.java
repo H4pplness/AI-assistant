@@ -2,6 +2,8 @@ package dongpb.learningeverything.chatassistantservice.application.controllers;
 
 import dongpb.learningeverything.chatassistantservice.domain.resource.ResourceService;
 import dongpb.learningeverything.chatassistantservice.domain.resource.ResourceDTO;
+import dongpb.learningeverything.chatassistantservice.domain.resource.http.HttpFunctionService;
+import dongpb.learningeverything.chatassistantservice.domain.resource.http.HttpRequestDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class ResourceController {
     private final ResourceService resourceService;
+    private final HttpFunctionService httpFunctionService;
 
     @PostMapping()
     public ResponseEntity<Object> createResource(@RequestBody ResourceDTO request){
@@ -33,5 +36,10 @@ public class ResourceController {
     @DeleteMapping("/{code}")
     public ResponseEntity<Object> deleteResource(@PathVariable("code") String code){
         return ResponseEntity.ok(resourceService.delete(code));
+    }
+
+    @GetMapping("")
+    public ResponseEntity<Object> sendRequest(@RequestBody HttpRequestDTO request){
+        return ResponseEntity.ok(httpFunctionService.sendRequest(request));
     }
 }
