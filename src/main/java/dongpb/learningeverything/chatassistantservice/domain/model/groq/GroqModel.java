@@ -1,4 +1,4 @@
-package dongpb.learningeverything.chatassistantservice.domain.model.grok;
+package dongpb.learningeverything.chatassistantservice.domain.model.groq;
 
 
 import dongpb.learningeverything.chatassistantservice.application.exception.BaseException;
