@@ -7,6 +7,9 @@ import lombok.EqualsAndHashCode;
 
 import java.util.Map;
 
+/**
+ * Định nghĩa cú pháp cho http request
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class HttpFunctionDTO extends FunctionDTO {

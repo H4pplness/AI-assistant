@@ -36,7 +36,16 @@ public class HttpFunctionService implements FunctionService<HttpRequestDTO> {
     }
 
     private Object sendGetRequest(HttpRequestDTO request){
-        String url = request.getUrl() + "/" + request.getPath();
+        String path = "";
+        if (request.getPath() != null) {
+            path = request.getPath();
+        }
+
+        if (!path.startsWith("/")) {
+            path = "/" + path;
+        }
+
+        String url = request.getUrl() + path;
 
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url);
         if (request.getQueryParams() != null) {
